@@ -1,0 +1,46 @@
+@charset "UTF-8"; /* Formatacao de acentuação para o Português no CSS */
+
+        /* --AREA DO CSS - AREA DE ESTILO-- */
+
+            /* --Formatacao do corpo padrão de todas as paginas do site-- */
+        body {
+            background-color: white; 
+            color: rgba(0, 0, 0, 1);
+        }
+            /* --Formatacao do Paragrafo-- */
+        p {
+            text-align: justify;
+            text-indent: 50px;
+        }
+
+            /*  --Formatação de imagens com legendas--  */
+
+        /* <figure class="foto-legenda">  --> Todas as foto-legenda vao ter formatacao padronizadas */
+
+        figure.foto-legenda {
+            position: relative;              /* Determina a posicao relativa da legenda para o figcaption */
+            border: 8px solid white;       /* Largura = 8px e Cor da Borda = white */
+            box-shadow: 1px 1px 4px black; /*Sombra na figura com deslocamento horizontal 1px,vertical 1px, espalhamento 4px e cor Preto*/
+        }
+
+        figure.foto-legenda img {    /* Tudo que for <img> (imagens)vai ter largura 100% e altura 100% */
+            width: 100%;       
+            height: 100%;
+        }
+
+        figure.foto-legenda figcaption {  /* Tudo que for <figcaption> (legendas) é subordinado ao <figure> (imagens)*/
+            opacity: 0; 
+            position: absolute;  /* Posicao absoluta da legenda dentro da borda branca */  
+            top:0px;               
+            background-color: rgba(0,0,0,.4); /* Transparencia de (.4) na cor preta (0,0,0) */
+            color: white;
+            width: 100%; /* coloca a borda preta dentro da imagem */
+            height: 100%;
+            padding: 10px;
+            box-sizing: border-box; /* Vai criar um box dentro da borda */
+            transition: opacity 1s;
+        }
+
+        figure.foto-legenda:hover figcaption {
+            opacity: 1;
+        }

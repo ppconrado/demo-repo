@@ -1,4 +1,7 @@
 @charset "UTF-8"; /* Formatacao de acentuação para o Português no CSS */
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+
 @font-face {
     font-family: 'FonteLogo';
     src: url("../_fonts/bubblegum-sans-regular.otf");
@@ -47,7 +50,7 @@
         }
 
          header#cabecalho h2 {
-            font-family: Arial, sans-serif;
+            font-family: 'Titillium Web', sans-serif;
             font-size: 30px;
             color: #888888;
             font-size: 15pt;
